@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="net.noyark.seckill.mapper.SeckillMapper">
+    <select id="selectAll" resultType="net.noyark.seckill.entity.Seckill">
+        SELECT * FROM seckill
+    </select>
+    <select id="selectByPrimaryKey" resultType="net.noyark.seckill.entity.Seckill">
+        SELECT * FROM seckill WHERE seckillId = #{id}
+    </select>
+</mapper>
